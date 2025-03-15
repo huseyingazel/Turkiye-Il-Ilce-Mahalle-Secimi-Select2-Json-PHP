@@ -15,7 +15,8 @@ Bu proje, Türkiye'deki iller, ilçeler ve mahalleleri Select2 kütüphanesi kul
 - Select2
 - JSON
 - PHP
-
+## NOT
+--index.php içindeki açıklama satırlarından 
 ## Kurulum ve Kullanım
 - Projeyi klonlayın veya indirin:
 ```
