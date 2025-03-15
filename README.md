@@ -24,7 +24,7 @@ git clone https://github.com/kullanici-adiniz/Turkiye-Il-Ilce-Mahalle-Secimi-Sel
 - Dosyaları web sunucunuzun ilgili dizinine yerleştirin.
 
 ### ⚠️ Önemli
-`index.html` dosyasında aşağıdaki satırların birini aktif etmek için yorum satırlarını (//) kaldırmayı unutmayın:
+`index.php` dosyasında aşağıdaki satırların birini aktif etmek için yorum satırlarını (//) kaldırmayı unutmayın:
 
 ```html
 <script>
@@ -66,7 +66,7 @@ git clone https://github.com/your-username/Turkiye-Il-Ilce-Mahalle-Secimi-Select
 - Place the files on your server.
 
 **IMPORTANT:**
-Don't forget to uncomment one of these script functions to initialize the application:
+`index.php` dont forget to uncomment one of these script functions to initialize the application:
 ```html
 <script>
   // verileriDuzenle("1", "1219", "255"); //Opens with preselected city, district, neighborhood
