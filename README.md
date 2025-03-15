@@ -1,12 +1,12 @@
-# Türkiye İl-İlçe-Mahalle Seçimi (Select2 + JSON + PHP)
+# Turkiye İl İlçe Mahalle Seçimi (Select2 + JSON + PHP)
 
 Bu proje, Türkiye'deki iller, ilçeler ve mahalleleri Select2 kütüphanesi kullanarak dinamik olarak listeleyen bir form örneğidir. Veriler JSON dosyaları üzerinden yüklenerek PHP aracılığıyla işlenir.
 
 ## Özellikler
-- Türkiye'deki tüm il, ilçe ve mahalle verilerini içerir.
-- Select2 ile gelişmiş ve kullanıcı dostu seçim kutuları.
-- AJAX kullanarak seçilen verilerin PHP dosyasına gönderimi.
-- Önceden seçilmiş verilerin form açıldığında otomatik yüklenmesi.
+- Türkiye'deki iller, ilçeler ve mahallelerin dinamik seçimi.
+- Select2 kullanımı ile gelişmiş kullanıcı deneyimi.
+- JSON üzerinden veri yükleme.
+- PHP ile veri işleme ve sunucuya gönderme.
 
 ## Kullanılan Teknolojiler
 - HTML
@@ -15,15 +15,28 @@ Bu proje, Türkiye'deki iller, ilçeler ve mahalleleri Select2 kütüphanesi kul
 - Select2
 - JSON
 - PHP
-## NOT
---index.php içindeki açıklama satırlarından 
+
 ## Kurulum ve Kullanım
 - Projeyi klonlayın veya indirin:
 ```
-git clone https://github.com/huseyingazel/Turkiye-Il-Ilce-Mahalle-Secimi-Select2-Json-PHP.git
+git clone https://github.com/kullanici-adiniz/Turkiye-Il-Ilce-Mahalle-Secimi-Select2-Json-PHP.git
 ```
-- Dosyaları yerel veya uzak sunucunuza yerleştirin.
-- `index.php` dosyasını açarak kullanmaya başlayabilirsiniz.
+- Dosyaları web sunucunuzun ilgili dizinine yerleştirin.
+
+### ⚠️ Önemli
+`index.html` dosyasında aşağıdaki satırların birini aktif etmek için yorum satırlarını (//) kaldırmayı unutmayın:
+
+```html
+<script>
+   // verileriDuzenle("1", "1219", "255"); //Seçili (il-ilçe-mahalle) verilerle açılır
+   // verileriGetir(); //Seçimsiz açılış
+</script>
+```
+Örneğin seçili verilerle başlatmak için:
+```js
+verileriDuzenle("1", "1219", "255");
+```
+şeklinde yorum satırını kaldırmalısınız.
 
 ---
 
@@ -32,10 +45,10 @@ git clone https://github.com/huseyingazel/Turkiye-Il-Ilce-Mahalle-Secimi-Select2
 This project is a dynamic form example listing Turkish cities, districts, and neighborhoods using the Select2 library. Data is loaded through JSON files and processed with PHP.
 
 ## Features
-- Contains all Turkish cities, districts, and neighborhoods.
-- Enhanced and user-friendly selection boxes with Select2.
-- Sends selected data to a PHP file using AJAX.
-- Automatically loads pre-selected values upon form initialization.
+- Dynamic selection of Turkish cities, districts, and neighborhoods.
+- Data loading from JSON files.
+- Enhanced select boxes using Select2.
+- PHP processing of submitted data.
 
 ## Technologies Used
 - HTML
@@ -48,11 +61,31 @@ This project is a dynamic form example listing Turkish cities, districts, and ne
 ## Installation & Usage
 - Clone or download the repository:
 ```
-git clone https://github.com/huseyingazel/Turkiye-Il-Ilce-Mahalle-Secimi-Select2-Json-PHP.git
+git clone https://github.com/your-username/Turkiye-Il-Ilce-Mahalle-Secimi-Select2-Json-PHP.git
 ```
-- Place the files on your local or remote server.
-- Open `index.php` to start using the application.
+- Place the files on your server.
+
+**IMPORTANT:**
+Don't forget to uncomment one of these script functions to initialize the application:
+```html
+<script>
+  // verileriDuzenle("1", "1219", "255"); //Opens with preselected city, district, neighborhood
+  // verileriGetir(); //Opens without any preselection
+</script>
+```
+Example usage with predefined selections:
+```js
+verileriDuzenle("1", "1219", "255");
+```
+
+## Technologies
+- HTML
+- JavaScript
+- JQuery
+- Select2
+- JSON
+- PHP
 
 ## License
-This project is licensed under the MIT License.
+This project is open-source.
 
